@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.wacc set filetype=wacc-file
+au BufNewFile,BufRead *.wacc set filetype=wacc-syntax.vim
