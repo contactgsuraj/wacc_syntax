@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.wacc set filetype=wacc
+au BufNewFile,BufRead *.wacc set filetype=wacc-file
