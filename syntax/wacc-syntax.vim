@@ -14,8 +14,9 @@ syntax keyword waccKeyword free return exit read print println newpair
 syntax keyword waccCond    if then else fi while do done for
 syntax keyword waccType    int bool char string pair
 
+"true false null len ord chr
+let b:current_syntax = "wacc"
+
 highlight link waccKeyword Keyword
 highlight link waccCond    Conditional
 highlight link waccType    Type
-"true false null len ord chr
-let b:current_syntax = "wacc"
