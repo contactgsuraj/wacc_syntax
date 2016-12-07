@@ -11,13 +11,13 @@ syntax keyword waccTodo   TODO contained
 syntax match waccIdent    '\v\h(\h|\d)*'
 syntax match waccComment  '\v#.*$' contains=waccTodo
 syntax match waccChar     '\v\'.\''
-syntax match waccAccess   '\vpublic' '\vprivate'
 syntax match waccNum      '\v[+-]?\d+'
 syntax match waccOperator '\v(\*|\/|\+|\-|\%)'
 syntax match waccOperator '\v(\=\=|\!\=|\&\&|\|\||\<\=|\>\=|\<|\>)'
 syntax region waccString start=/\v"/ skip=/\v\\./ end=/\v"/
 
 syntax keyword waccKeyword  begin end skip statement is call fst snd from
+syntax keyword waccAccess  public private
 syntax keyword waccKeyword  free return exit read print println newpair class
 syntax keyword waccCond     if then else fi
 syntax keyword waccRepeat   for while do done
@@ -35,6 +35,7 @@ highlight link waccRepeat   Repeat
 highlight link waccType     Type
 highlight link waccOperator Operator
 highlight link waccChar     Character
+highlight link waccAccess     Character
 highlight link waccNum      Number
 highlight link waccBool     Boolean
 highlight link waccString   String
