@@ -10,7 +10,8 @@ endif
 syntax keyword waccTodo   TODO contained
 syntax match waccIdent    '\v\h(\h|\d)*'
 syntax match waccComment  '\v#.*$' contains=waccTodo
-syntax match waccChar     '\v\'.\'' public private
+syntax match waccChar     '\v\'.\''
+syntax match waccAccess   public private
 syntax match waccNum      '\v[+-]?\d+'
 syntax match waccOperator '\v(\*|\/|\+|\-|\%)'
 syntax match waccOperator '\v(\=\=|\!\=|\&\&|\|\||\<\=|\>\=|\<|\>)'
