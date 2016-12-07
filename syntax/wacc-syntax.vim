@@ -16,11 +16,11 @@ syntax match waccOperator '\v(\*|\/|\+|\-|\%)'
 syntax match waccOperator '\v(\=\=|\!\=|\&\&|\|\||\<\=|\>\=|\<|\>)'
 syntax region waccString start=/\v"/ skip=/\v\\./ end=/\v"/
 
-syntax keyword waccKeyword  begin end skip statement is call fst snd
-syntax keyword waccKeyword  free return exit read print println newpair
+syntax keyword waccKeyword  begin end skip statement is call fst snd from
+syntax keyword waccKeyword  free return exit read print println newpair class
 syntax keyword waccCond     if then else fi
 syntax keyword waccRepeat   for while do done
-syntax keyword waccType     int bool char string pair
+syntax keyword waccType     int bool char string pair new
 syntax keyword waccOperator len ord chr
 syntax keyword waccBool     true false
 
